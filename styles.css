@@ -1,0 +1,59 @@
+/* Styling for toggle */
+.toggle {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#toggle {
+    display: none;
+}
+
+.switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    background: rgb(106,113,220);
+    background: linear-gradient(270deg, rgba(106,113,220,1) 0%, rgba(139,146,232,1) 35%, rgba(159,165,237,1) 100%);;
+    position: relative;
+    cursor: pointer;
+    margin-left: 0px;
+    border-radius: 10px;
+}
+
+label::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    width: 14px;
+    height: 14px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked + label::before {
+    left: 23px;
+}
+
+/* Page styling */
+
+* {
+    text-align: center;
+}
+
+.container {
+    width: 75%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+}
+
+.hwbox {
+    display: flex;
+    justify-content: space-between;
+}
